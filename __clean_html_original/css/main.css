@@ -195,6 +195,49 @@ svg path {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
+.top_wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.top_wrapper .top_descr {
+  display: table-row;
+}
+.top_wrapper .top_descr .top_centered {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.top_wrapper .top_text {
+  display: inline-block;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.top_wrapper .top_text p {
+  margin: 0;
+  text-transform: uppercase;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.top_wrapper .top_text h1 {
+  display: inline-block;
+  padding: 10px 35px;
+  color: #fff;
+  border: 8px solid #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.8em;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 .toggle_mnu {
   background-color: #000;
 }

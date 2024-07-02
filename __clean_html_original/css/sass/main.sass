@@ -160,6 +160,40 @@ svg
 				&:hover
 					background-color: rgba(255,255,255,.08)
 
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		+transition(all 1s ease)
+		p
+			margin: 0
+			text-transform: uppercase
+			+animation-delay(1s)
+		h1
+			display: inline-block
+			padding: 10px 35px
+			color: #fff
+			border: 8px solid #fff
+			text-transform: uppercase
+			font-weight: bold
+			font-size: 2.8em
+			background-color: rgba(0,0,0,.1)
+			margin-left: 20px
+			margin-right: 20px
+			+animation-delay(.5s)
+
 .toggle_mnu
 	background-color: #000
 
@@ -186,3 +220,4 @@ svg
 		left: 50%
 		top: 50%
 		position: absolute
+
