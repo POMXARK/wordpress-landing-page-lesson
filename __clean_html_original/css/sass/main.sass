@@ -36,6 +36,86 @@ svg
 	z-index: 1
 	position: relative
 
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+	span
+		display: block
+
+
+$w: 28px
+$h: 3px
+
+.sandwich
+	width: $w
+	height: $w
+	position: absolute
+	top: 8px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	display: block
+
+//transition-delay: 0.2s, 0s
+
+
+svg
+	path
+		fill: #e0e0e0
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+.sandwich.active
+	.sw-topper
+		top: 9px
+		transform: rotate(-45deg)
+	.sw-bottom
+		top: 6px
+		transform: rotate(45deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+.toggle_mnu
+	background-color: #000
+
 .loader
 	background: none repeat scroll 0 0 #ffffff
 	bottom: 0
