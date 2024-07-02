@@ -1,18 +1,35 @@
 body {
   color: #222;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+}
 
 a {
-  color: #FF6347; }
+  color: #FF6347;
+}
 
 p {
-  color: #888; }
+  color: #888;
+}
 
 .color_element {
-  color: #FF6347; }
+  color: #FF6347;
+}
 
 .color_bg {
-  background-color: #FF6347; }
+  background-color: #FF6347;
+}
 
 .color_border {
-  border-color: #FF6347; }
+  border-color: #FF6347;
+}
+
+.main_color_bg {
+  background-color: #222;
+}
+
+.top_mnu a:hover {
+  color: #FF6347;
+}
+.top_mnu a {
+  letter-spacing: 4px;
+}
