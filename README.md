@@ -1,6 +1,6 @@
 # Создание Landing Page на WordPress
 
-![Создание Landing Page на WordPress](https://raw.githubusercontent.com/agragregra/wordpress-landing-page-lesson/master/_mockup.jpg)
+![lending-portfolio-demo](https://github.com/POMXARK/wordpress-landing-page-lesson/assets/18720947/a8703740-5c7f-4b14-a5c9-189cf62d6e67)
 
 <p>Бесплатный видеокурс по созданию одностраничного сайта на WordPress от А до Я.</p>
 
