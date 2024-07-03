@@ -48,10 +48,10 @@
 					</button>
 					<nav class="top_mnu">
 						<ul>
-							<li><a href="#">Обо мне</a></li>
-							<li><a href="#">Резюме</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="#about">Обо мне</a></li>
+							<li><a href="#resume">Резюме</a></li>
+							<li><a href="#portfolio">Портфолио</a></li>
+							<li><a href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -338,6 +338,7 @@
 		</div>
 	</section>
 
+
 	<section id="contacts" class="s_contacts bg_light">
 		<div class="section_header">
 			<h2>Контакты</h2>
@@ -348,7 +349,43 @@
 		<div class="section_content">
 			<div class="container">
 				<div class="row">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo fugiat id optio possimus quae tenetur vel. A accusamus, alias atque deserunt dignissimos, dolores exercitationem ipsam magni non repudiandae veritatis.
+					<div class="col-md-6 col-sm-6">
+						<div class="contact_box">
+							<div class="contacts_icon icon-basic-geolocalize-05"></div>
+							<h3>Адрес:</h3>
+							<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.</p>
+						</div>
+						<div class="contact_box">
+							<div class="contacts_icon icon-basic-smartphone"></div>
+							<h3>Телефон:</h3>
+							<p>+7 999 999 99 99</p>
+						</div>
+						<div class="contact_box">
+							<div class="contacts_icon icon-basic-webpage-img-txt"></div>
+							<h3>Веб-сайт:</h3>
+							<p><a href="//webdesign-master.ru" target="_blank">webdesign-master.ru</a></p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<form action="http://formspree.io/agragregra@ya.ru" class="main_form" novalidate target="_blank" method="post">
+							<label class="form-group">
+								<span class="color_element">*</span> Ваше имя:
+								<input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+								<span class="help-block text-danger"></span>
+							</label>
+							<label class="form-group">
+								<span class="color_element">*</span> Ваш E-mail:
+								<input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+								<span class="help-block text-danger"></span>
+							</label>
+							<label class="form-group">
+								<span class="color_element">*</span> Ваше сообщение:
+								<textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+								<span class="help-block text-danger"></span>
+							</label>
+							<button>Отправить</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -386,6 +423,7 @@
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
 	<script src="js/common.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->

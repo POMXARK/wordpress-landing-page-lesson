@@ -79,6 +79,32 @@ section .personal_header {
   padding-top: 20px;
 }
 
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-posirion: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
 .logo_container {
   float: left;
 }
@@ -494,28 +520,61 @@ svg path {
   margin-top: 5px;
 }
 
-.loader {
-  background: none repeat scroll 0 0 #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
+.contact_box {
+  margin-bottom: 30px;
 }
-.loader .loader_inner {
-  background-image: url("../img/preloader.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-posirion: center center;
-  background-color: #fff;
-  height: 60px;
-  width: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
-  left: 50%;
-  top: 50%;
-  position: absolute;
+.contact_box h3 {
+  text-align: left;
+  color: #000;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+.contact_box .contacts_icon {
+  font-size: 30px;
+}
+.contact_box p {
+  margin-top: 5px;
+}
+
+.main_form button {
+  border: none;
+  color: #fff;
+  line-height: 40px;
+  padding: 0 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+  float: right;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-group .color_element {
+  font-weight: 700;
+  font-size: 18px;
+}
+.form-group .text-danger {
+  font-size: 11px;
+  margin-top: 5px;
+  display: block;
+}
+.form-group .text-danger ul,
+.form-group .text-danger li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  line-height: 40px;
+  text-indent: 12px;
+  font-size: 12px;
+  background-color: transparent;
 }
