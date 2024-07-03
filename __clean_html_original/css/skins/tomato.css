@@ -81,3 +81,21 @@ section h3 {
 .resume_item .resume_description {
   letter-spacing: 1px;
 }
+
+.s_portfolio li {
+  color: #888;
+  letter-spacing: 2px;
+}
+.s_portfolio li.active {
+  color: #fff;
+  border-bottom: 1px solid #FF6347;
+}
+
+.portfolio_item .port_item_cont a {
+  border-color: #FF6347;
+  color: #FF6347;
+}
+
+.main_footer a {
+  color: #FF6347;
+}

@@ -32,6 +32,17 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+    .main_footer {
+        text-align: left;
+    }
+    .main_footer .social_wrap {
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .main_footer .social_wrap ul {
+        padding-left: 0;
+    }
 }
 
 /* Custom, iPhone Retina */
