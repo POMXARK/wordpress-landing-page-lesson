@@ -15,7 +15,9 @@ body
 a
 	color: $color
 
-p
+p,
+body .main_footer,
+.s_about li
 	color: $text_color
 
 .color_element
@@ -45,3 +47,11 @@ p
 	a
 		+kerning(4)
 
+section
+	h3
+		+kerning(3)
+		color: $text_color
+
+.s_about
+	p:nth-child(even)
+		color: $color

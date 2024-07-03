@@ -7,7 +7,9 @@ a {
   color: #FF6347;
 }
 
-p {
+p,
+body .main_footer,
+.s_about li {
   color: #888;
 }
 
@@ -47,4 +49,13 @@ p {
 }
 .top_mnu a {
   letter-spacing: 4px;
+}
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.s_about p:nth-child(even) {
+  color: #FF6347;
 }

@@ -1,3 +1,5 @@
+$(".popup").magnificPopup({type:"image"});
+
 function heightDetect() {
 	$(".main_head").css("height", $(window).height());
 };
@@ -27,6 +29,12 @@ $(".toggle_mnu").click(function() {
 		$(".top_mnu li a").addClass("fadeInUp animated");
 	};
 });
+
+$(".section_header").animated("fadeInUp", "fadeOutDown");
+
+$(".animation_1").animated("flipInY", "fadeOutDown");
+$(".animation_2").animated("fadeInLeft", "fadeOutDown");
+$(".animation_3").animated("fadeInRight", "fadeOutDown");
 
 $(window).load(function() {
 
