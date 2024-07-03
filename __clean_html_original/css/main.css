@@ -334,6 +334,66 @@ svg path {
   padding: 0 3px;
 }
 
+.resume_container .left .resume_description strong {
+  margin-left: 10px;
+}
+.resume_container .right .resume_description strong {
+  margin-right: 10px;
+}
+.resume_container .left {
+  text-align: right;
+  border-right: #d2d2d2 1px solid;
+}
+.resume_container .left h3 {
+  text-align: right;
+}
+.resume_container .right {
+  text-align: left;
+}
+.resume_container .right h3 {
+  text-align: left;
+}
+.resume_container h3 {
+  margin-top: 30px;
+}
+.resume_container .year {
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+.resume_container strong {
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.resume_container .resume_description {
+  font-style: italic;
+}
+.resume_container .resume_item {
+  margin-bottom: 40px;
+}
+.resume_container .resume_item p {
+  margin-top: 10px;
+}
+.resume_container .resume_item:last-child {
+  margin-bottom: 0;
+}
+.resume_container .resume_item:last-child p {
+  margin-bottom: 0;
+}
+
+.resume_icon {
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.resume_icon .year {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;

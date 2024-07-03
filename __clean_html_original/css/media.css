@@ -7,12 +7,22 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .personal_last_block {
+        margin-top: 35px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+    .resume_container .left,
+    .section_content .resume_container h3,
+    .resume_container .resume_icon {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .resume_container .left h3 {
+        margin-top: 0;
+    }
 }
 
 /* Extra Small Devices, Phones */

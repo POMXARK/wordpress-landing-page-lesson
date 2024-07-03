@@ -47,6 +47,11 @@ body .main_footer,
 	a
 		+kerning(4)
 
+.s_descr
+	+kerning(4)
+	&::after
+		background-color: $main_color
+
 section
 	h3
 		+kerning(3)
@@ -55,3 +60,17 @@ section
 .s_about
 	p:nth-child(even)
 		color: $color
+
+.resume_container
+	h3
+		color: $main_color
+		+kerning(1)
+		font-size: 16px
+		font-weight: 600
+
+.resume_item
+	.year
+		background-color: $color
+		color: #fff
+	.resume_description
+		+kerning(1)

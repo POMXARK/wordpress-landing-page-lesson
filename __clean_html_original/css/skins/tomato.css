@@ -51,6 +51,13 @@ body .main_footer,
   letter-spacing: 4px;
 }
 
+.s_descr {
+  letter-spacing: 4px;
+}
+.s_descr::after {
+  background-color: #222;
+}
+
 section h3 {
   letter-spacing: 3px;
   color: #888;
@@ -58,4 +65,19 @@ section h3 {
 
 .s_about p:nth-child(even) {
   color: #FF6347;
+}
+
+.resume_container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resume_item .year {
+  background-color: #FF6347;
+  color: #fff;
+}
+.resume_item .resume_description {
+  letter-spacing: 1px;
 }
