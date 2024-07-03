@@ -19,9 +19,49 @@ body textarea:required:valid
 .hidden
 	display: none
 
+
 section,
-.main-head
+.main_head
 	position: relative
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 12px
+		margin-top: 0
+		margin-bottom: 35px
+
+section
+	padding: 70px 0 90px
+	h2
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin: 0 0 15px
+		letter-spacing: 1px
+	.personal_header
+		font-size: 13px
+		text-align: left
+		margin-bottom: 30px
+		color: #555
+
+.s_descr_wrap
+	text-align: center
+	.s_descr
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		position: relative
+		margin-bottom: 130px
+		font-weight: 600
+		&::after
+			content: ""
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 60px
+			position: absolute
+			width: 150px
 
 .main_head
 	min-height: 620px
@@ -196,6 +236,16 @@ svg
 
 .toggle_mnu
 	background-color: #000
+
+.main_footer
+	padding: 50px 0
+	font-size: 13px
+	font-weight: 300
+	.social_wrap
+		float: right
+		line-height: 0
+		ul
+			margin: 0
 
 .loader
 	background: none repeat scroll 0 0 #ffffff

@@ -23,8 +23,55 @@ body textarea:required:valid {
 }
 
 section,
-.main-head {
+.main_head {
   position: relative;
+}
+section h3,
+.main_head h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+section {
+  padding: 70px 0 90px;
+}
+section h2 {
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  letter-spacing: 1px;
+}
+section .personal_header {
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.s_descr_wrap {
+  text-align: center;
+}
+.s_descr_wrap .s_descr {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 130px;
+  font-weight: 600;
+}
+.s_descr_wrap .s_descr::after {
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: 60px;
+  position: absolute;
+  width: 150px;
 }
 
 .main_head {
@@ -240,6 +287,19 @@ svg path {
 
 .toggle_mnu {
   background-color: #000;
+}
+
+.main_footer {
+  padding: 50px 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+.main_footer .social_wrap {
+  float: right;
+  line-height: 0;
+}
+.main_footer .social_wrap ul {
+  margin: 0;
 }
 
 .loader {

@@ -23,6 +23,21 @@ p {
   border-color: #FF6347;
 }
 
+.bg_light {
+  background-color: #FAFAFA;
+}
+
+.bg_dark {
+  background-color: #222;
+  color: #fff;
+}
+.bg_dark .s_descr::after {
+  background-color: #fff;
+}
+.bg_dark a {
+  color: #fff;
+}
+
 .main_color_bg {
   background-color: #222;
 }
