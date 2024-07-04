@@ -85,6 +85,10 @@ define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '439e866
 define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'ec2e124feeb572d298d838d8ae078f5f5db39de7') );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
+// для работы установки плагинов в docker
+// chmod -R 777 wordpress/wp-content/
+define('FS_METHOD', 'direct');
+
 /**#@-*/
 
 /**

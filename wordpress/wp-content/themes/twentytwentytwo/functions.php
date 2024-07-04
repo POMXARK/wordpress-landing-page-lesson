@@ -48,7 +48,7 @@ if ( ! function_exists( 'twentytwentytwo_styles' ) ) :
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 		wp_register_style(
 			'twentytwentytwo-style',
-			get_template_directory_uri() . '/style.css',
+            get_template_directory_uri() . '/style.css',
 			array(),
 			$version_string
 		);
