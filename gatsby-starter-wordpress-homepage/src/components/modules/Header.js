@@ -1,4 +1,4 @@
-import {useStaticQuery, graphql, Script} from 'gatsby'
+import {useStaticQuery, graphql} from 'gatsby'
 import * as React from 'react';
 import ImgBg from '../../img/bg.jpg'
 
@@ -15,7 +15,6 @@ export default function Header() {
     `)
 
     return (
-        <>
             <header className="main_head main_color_bg" data-parallax="scroll"
                     data-image-src={ImgBg}
                     data-z-index="1">
@@ -63,8 +62,5 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-
-            <Script src="/common_vendor.js" type="text/javascript"/>
-        </>
     )
 }
