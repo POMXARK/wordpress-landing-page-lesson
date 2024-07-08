@@ -52,8 +52,7 @@ export default function AboutMy() {
                                 if (node.guid === '/?p=7') {
                                     return ((<div dangerouslySetInnerHTML={{ __html: node.content}}/>))
                                 }
-                            })
-                            }
+                            })}
                         </div>
                         <div className="col-md-4 animation_3 personal_last_block">
                             <h3>Персональная информация</h3>

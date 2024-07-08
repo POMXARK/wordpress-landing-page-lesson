@@ -4,6 +4,9 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+// const $ = require("jquery")
+const path = require(`path`)
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://gatsbywordpresshomepage.gatsbyjs.io/",
@@ -16,6 +19,13 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         url: process.env.WPGRAPHQL_URL,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: path.join(__dirname, `src`, `img`),
       },
     },
     "gatsby-plugin-sharp",
@@ -34,5 +44,11 @@ module.exports = {
         icon: "src/favicon.png",
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-load-script',
+    //   options: {
+    //     src: ['/libs/parallax/parallax.min.js']
+    //   },
+    // },
   ],
 }
