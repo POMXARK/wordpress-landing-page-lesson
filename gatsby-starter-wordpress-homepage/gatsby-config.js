@@ -4,10 +4,11 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-// const $ = require("jquery")
+const config = require('./config');
 const path = require(`path`)
 
 module.exports = {
+  pathPrefix: config.gatsby.pathPrefix,
   siteMetadata: {
     siteUrl: "https://gatsbywordpresshomepage.gatsbyjs.io/",
     title: "Gatsby WordPress Homepage Starter",

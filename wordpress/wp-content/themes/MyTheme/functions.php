@@ -24,14 +24,14 @@ add_theme_support('post-thumbnails');
 
 add_action( 'graphql_register_types', function() {
 
-  register_graphql_field( 'Post', 'resumePlace', [
+    register_graphql_field( 'Post', 'resumePlace', [
     'type' => 'String',
     'description' => __( 'The cost of the post item', 'your-textdomain' ),
     'resolve' => function( $post ) {
       $resumePlace = get_post_meta( $post->ID, 'resume_place', true );
       return ! empty( $resumePlace ) ? $resumePlace : null;
     }
-  ] );
+    ]);
 
     register_graphql_field( 'Post', 'resumeYears', [
       'type' => 'String',
@@ -40,6 +40,39 @@ add_action( 'graphql_register_types', function() {
         $resumeYears = get_post_meta( $post->ID, 'resume_years', true );
         return ! empty( $resumeYears ) ? $resumeYears : null;
       }
-    ] );
+    ]);
+
+
+    register_graphql_field( 'Settings', 'phone', [
+      'type' => 'String',
+      'description' => __( 'The cost of the post item', 'your-textdomain' ),
+      'resolve' => function( $settings ) {
+        return get_option('sample_theme_options')['phonetext'];
+      }
+    ]);
+
+    register_graphql_field( 'Settings', 'site', [
+      'type' => 'String',
+      'description' => __( 'The cost of the post item', 'your-textdomain' ),
+      'resolve' => function( $settings ) {
+        return get_option('sample_theme_options')['sitetext'];
+      }
+    ]);
+
+    register_graphql_field( 'Settings', 'email', [
+      'type' => 'String',
+      'description' => __( 'The cost of the post item', 'your-textdomain' ),
+      'resolve' => function( $settings ) {
+        return get_option('sample_theme_options')['addresstext'];
+      }
+    ]);
+
+    register_graphql_field( 'Settings', 'color', [
+      'type' => 'String',
+      'description' => __( 'The cost of the post item', 'your-textdomain' ),
+      'resolve' => function( $settings ) {
+        return get_option('sample_theme_options')['selectinput'];
+      }
+    ]);
 
 } );

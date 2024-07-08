@@ -8,18 +8,26 @@ import Portfolio from "../components/modules/Portfolio";
 import {Script} from "gatsby";
 import Contacts from "../components/modules/Contacts";
 import Footer from "../components/modules/Footer";
+import { globalHistory } from '@reach/router';
+import config from '../../config';
 
 export default function Homepage(props) {
   return (
-    <>
-        {Header()}
-        {AboutMy()}
-        {Resume()}
-        {Portfolio()}
-        {Contacts()}
-        {Footer()}
+      <>
+          <div className="loader">
+              <div className="loader_inner"></div>
+          </div>
 
-        <Script src="/common_vendor.js" type="text/javascript"/>
-    </>
+          {Header()}
+          {AboutMy()}
+          {Resume()}
+          {Portfolio()}
+          {Contacts()}
+          {Footer()}
+
+          <Script
+              src={globalHistory.location.protocol === 'http:' ? "/common_vendor.js" : config.gatsby.pathPrefix + "/common_vendor.js"}
+              type="text/javascript"/>
+      </>
   )
 }
