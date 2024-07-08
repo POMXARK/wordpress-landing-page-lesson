@@ -1,7 +1,6 @@
 import {useStaticQuery, graphql, Script} from 'gatsby'
 import * as React from 'react';
 import ImgBg from '../../img/bg.jpg'
-import {globalHistory} from '@reach/router'
 
 export default function Header() {
     const {wp} = useStaticQuery(graphql`
@@ -14,7 +13,6 @@ export default function Header() {
             }
         }
     `)
-    console.log(globalHistory)
 
     return (
         <>
