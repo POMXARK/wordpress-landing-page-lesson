@@ -6,6 +6,7 @@ import AboutMy from "../components/modules/AboutMy";
 import Resume from "../components/modules/Resume";
 import Portfolio from "../components/modules/Portfolio";
 import {Script} from "gatsby";
+import Contacts from "../components/modules/Contacts";
 
 export default function Homepage(props) {
 
@@ -15,6 +16,7 @@ export default function Homepage(props) {
       {AboutMy()}
       {Resume()}
       {Portfolio()}
+      {Contacts()}
 
       <Script src="/common_vendor.js" type="text/javascript"/>
     </>
