@@ -1,6 +1,5 @@
 import {useStaticQuery, graphql} from 'gatsby'
 import * as React from 'react';
-import ImgBg from '../../img/bg.jpg'
 
 export default function Contacts() {
     const {wp} = useStaticQuery(graphql`
