@@ -1051,12 +1051,3 @@ $("input, select, textarea").jqBootstrapValidation();
 
 $(".top_mnu ul a").mPageScroll2id();
 
-$(window).load(function() {
-
-    $(".loader_inner").fadeOut();
-    $(".loader").delay(400).fadeOut("slow");
-
-    $(".top_text h1").animated("fadeInDown", "fadeOutUp");
-    $(".top_text p").animated("fadeInUp", "fadeOutDown");
-
-});
